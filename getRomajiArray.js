@@ -1,7 +1,7 @@
-import generateRandomText from "./generateRandomText.js";
+import { generateRandomText, getWord } from "./generateRandomText.js";
 
 export function getRomajiArray() {
-  let inputText = generateRandomText(5);
+  let inputText = getWord();
   let romajiArray = inputText.split("");
   return romajiArray;
 }

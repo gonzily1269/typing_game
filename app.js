@@ -33,11 +33,7 @@ document.addEventListener("keydown", (event) => {
     warning.innerHTML = "入力された文字が間違っています。";
   }
   // 正解数更新
-  result.innerHTML =
-    correctCount +
-    "/" +
-    keydownCount +
-    "(" +
-    Math.round((correctCount / keydownCount) * 100) +
-    "%)";
+  result.innerHTML = `${correctCount}/${keydownCount}(${Math.round(
+    (correctCount / keydownCount) * 100
+  )}%)`;
 });
